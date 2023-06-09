@@ -108,6 +108,43 @@
     
 # ------ Book N109 ---
 
+# def magic(day, month, year):
+#     last_digits_year = str(year)[2:]
+#     if day*month == int(last_digits_year):
+#         return f'{day}:{month}:{year} is a magic date!'
+#     else:
+#         return f'{day}:{month}:{year} is not a magic date!'
+# print(magic(int(input('Enter day: ')), int(input('Enter month: ')), int(input('Enter year: '))))
+
+#------or-------
+# def magic():
+#     mydict = {
+#         1: range(1, 32),
+#         2: range(1, 29),
+#         3: range(1, 32),
+#         4: range(1, 31),
+#         5: range(1, 32),
+#         6: range(1, 31),
+#         7: range(1, 32),
+#         8: range(1, 32),
+#         9: range(1, 31),
+#         10: range(1, 32),
+#         11: range(1, 31),
+#         12: range(1, 32)
+#     }
+
+#     magic_dates = []
+#     for year in range(1900, 2000):
+#         for month in mydict:
+#             for day in mydict[month]:
+#                 if day * month == int(str(year)[2:]):
+#                     magic_dates.append(f'{day}:{month}:{year} is a magic date!')
+    
+#     if magic_dates:
+#         return '\n'.join(magic_dates)
+# print(magic())
+
+
 
 
 
