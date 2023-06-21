@@ -38,16 +38,16 @@
 # print(func(int(input('Enter number: ' ))))
 
 # ------ Book N99 ---
-# def nextPrime(n):
-#     while True:
-#         n += 1
-#         for i in range(2, n):
-#             if n % i == 0:
-#                 return f'Next prime number is {n}'
-#             else:
-#                 continue
+def nextPrime(n):
+    while True:
+        n += 1
+        for i in range(2, n):
+            if n % i == 0:
+                return f'Next prime number is {n}'
+            else:
+                continue
 
-# print(nextPrime(int(input('Enter number: '))))
+print(nextPrime(int(input('Enter number: '))))
 
 # ------ Book N100 ---
 # def password():
