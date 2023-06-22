@@ -159,4 +159,108 @@
 #         print('Invalid input.')
 # print(grades(int(input('Enter a number: '))))
 
+# ------- Book N158 -----
+# def line(filename):
+#     try:
+#         with open(filename, 'r') as file:
+#             lines = file.read()
+#             mylist = lines.split('\n')
+#             newlist = []
 
+#             for i in mylist:
+#                 if i.startswith('#'):
+#                     newlist.append(i[1:])
+#                 elif i.endswith('#'):
+#                     newlist.append(i[:-1])
+#                 else:
+#                     newlist.append(i)
+            
+#             print(newlist)
+            
+#     except FileNotFoundError:
+#         print('File not found :(')
+
+# line(input('Enter file name: '))
+
+# ------ Book N159 -----
+# def line(filename):
+#     import random
+#     try:
+#         with open(filename, 'r') as file:
+#             lines = file.read()
+#             mylist = lines.split('\n')
+#             newlist = []
+
+#             for i in mylist:
+#                 if len(i) > 3:
+#                     newlist.append(i)
+#             for i in range(len(newlist)):    
+#                 s = random.choice(newlist)
+#                 w = random.choice(newlist)
+#                 if len(s + w) > 8:
+#                     print(f'Password: {s+w}')
+#                     break
+
+
+#     except FileNotFoundError:
+#         print('File not found :(')
+
+# line(input('Enter file name: '))
+
+#------ Book N160 ----
+# def line(filename):
+#     try:
+#         with open(filename, 'r') as file:
+#             lines = file.read()
+#             mylist = lines.split('\n')
+#             rule = set()
+#             unrule = set()
+
+#             for l in mylist:
+#                 words = l.split()
+#                 for j in words:
+#                     for i in range(len(j) - 1):
+#                         if j[i:i+2] == 'ie' and 'c' in j[i+2:]:
+#                             rule.add(j)
+#                         elif j[i:i+2] == 'ei' and 'c' in j[:i+2]:
+#                             rule.add(j)
+#                         elif j[i:i+2] == 'ie' and 'c' not in j:
+#                             rule.add(j)
+#                 else:
+#                     unrule.add(j)
+
+#             print(rule, len(rule))
+#             print(unrule, len(unrule))
+
+#     except FileNotFoundError:
+#         print('File not found :(')
+
+# line(input('Enter file name: '))
+
+#----- N161 similiar to another exercise ----
+
+# ---- Book N162 -----
+# def line(filename):
+#     try:
+#         with open(filename, 'r') as file:
+#             lines = file.read()
+#             mylist = lines.split('\n')
+
+#             counts = {} 
+
+#             for i in mylist:
+#                 for j in i:
+#                     if j in counts:
+#                        counts[j] += 1
+#                     else:
+#                         counts[j] = 1
+
+#             for j, count in counts.items():
+#                 print(f'{j} : {count}')
+
+#     except FileNotFoundError:
+#         print('File not found :(')
+
+# line(input('Enter file name: '))
+
+# ---- Book N162 -----
