@@ -263,4 +263,26 @@
 
 # line(input('Enter file name: '))
 
-# ---- Book N162 -----
+# ---- Book N168 -----
+# def line(filename):
+#     try:
+#         with open(filename, 'r') as file:
+#             lines = file.read()
+#             mylist = lines.split('\n')
+
+#             for i in range(len(mylist)):
+#                 if mylist[i] == mylist[i+1]:
+#                     print(f'{mylist[i]} on the {i + 1} line is a duplicate!')
+#                     break
+#             else:
+#                 print(f'No duplicate found!')
+                
+
+#     except FileNotFoundError:
+#         print('File not found :(')
+
+# line(input('Enter file name: '))
+
+#----- Book N169 ----
+
+
